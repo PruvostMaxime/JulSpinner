@@ -3,7 +3,7 @@ dog_site = {};
 dog_site.init = function() {
   dog_site.dog = document.getElementById("dog");
   dog_site.pet_count = document.getElementById("petcount");
-  dog_site.pets = 0;
+  dog_site.pets = localStorage.getItem("score");
   dog.addEventListener("mousedown", dog_site.mousedown);
   dog.addEventListener("mouseup", dog_site.mouseup);
   dog_site.loop();
@@ -36,3 +36,16 @@ dog_site.loop = function() {
 window.onload = function() {
   dog_site.init();
 }
+
+document.getElementById('dog').addEventListener('click', function()
+{
+  var score = localStorage.getItem("score");
+  if(!score)
+    localStorage.setItem("score", 1);
+  else localStorage.setItem("score", ++score);
+
+  document.getElementById('petcount').innerHTML = score;
+  console.log(score);
+});;
+
+// localStorage.removeItem("score");
