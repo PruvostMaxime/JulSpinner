@@ -1,8 +1,10 @@
 # SpinJul
 
-c'est jul qui tourne en cliquant dessus avec de la musique de jul
+# 1 - A quoi ca sert?
+Une decouverte du JS,donc l'interet est limité?
 
-c'est super
+# 2 - J'aime pas Jul !
+Coupe le son alors :)
 
 
 
